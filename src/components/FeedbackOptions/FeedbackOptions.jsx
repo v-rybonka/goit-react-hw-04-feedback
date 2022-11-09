@@ -11,7 +11,7 @@ export const FeedbackOptions = ({ options, onClick }) => {
     <FeedBackList>
       {options.map(option => (
         <FeedBackItem key={option}>
-          <FeedBackBtn onClick={() => onClick(option)}>{option}</FeedBackBtn>
+          <FeedBackBtn type="button" name={option} onClick={ onClick}>{option}</FeedBackBtn>
         </FeedBackItem>
       ))}
     </FeedBackList>
